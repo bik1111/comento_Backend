@@ -1,13 +1,15 @@
-##comento_Backend
+## comento_Backend
 
 
-#2주차
+# 2주차
 
 API 가이드 문서 초안 작성
 
 https://spiral-sturgeon-2b1.notion.site/API-be6893ac2dfc4ec29677032c1e24f7a3
 
-#1주차
+-----
+
+# 1주차
 ### Java, Eclipse
 
 - 맥북 M1 칩 이라 호환되는 java,이클립스 버전을 찾느라 애 먹음
