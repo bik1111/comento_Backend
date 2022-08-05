@@ -1,25 +1,14 @@
 # comento_Backend
 
 
+<2주차>
+
+API 가이드 문서 초안 작성
+
+https://www.notion.so/API-be6893ac2dfc4ec29677032c1e24f7a3
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h1> 1주차 <h1>
-
+1주차
 # Java, Eclipse
 
 - 맥북 M1 칩 이라 호환되는 java,이클립스 버전을 찾느라 애 먹음
