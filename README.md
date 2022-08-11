@@ -1,5 +1,17 @@
 ## comento_Backend
 
+# 3주차
+- 2주차 API 과제 수정완료.
+- 3주차 spring boot 환경설정
+
+웹페이지에서 결과가 안따라줌.
+
+<img width="1424" alt="스크린샷 2022-08-12 오전 12 56 19" src="https://user-images.githubusercontent.com/76617139/184176835-dbc4af74-e03d-4a9d-9f00-c3a01d2a58a2.png">
+
+<img width="736" alt="스크린샷 2022-08-12 오전 12 56 29" src="https://user-images.githubusercontent.com/76617139/184176884-1a2dc6ce-b7cc-4ffd-8ef3-aba49949ff91.png">
+
+
+-----
 
 # 2주차
 
