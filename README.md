@@ -8,6 +8,29 @@
 
 1. 스프링부트 환경설정을 진행하면서 test 코드에 대한 결과는 얻지못함.
 
+```
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%> 
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%> 
+<!DOCTYPE html> 
+<html lang="ko">
+     <head>
+         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+         <title>View Test Page</title> 
+     </head> 
+ <body> 
+     <h2>설정 테스트 ${name}</h2> 
+     <div>JSP 뿌리기</div> 
+     <c:forEach var="item" items="${list}" varStatus="idx"> 
+         ${idx.index} : ${item} <br /> 
+     </c:forEach>
+  </body> 
+</html>
+```
+
+
+<img width="1404" alt="스크린샷 2022-08-12 오후 12 55 36" src="https://user-images.githubusercontent.com/76617139/184282326-31dea2e7-0903-409c-9ad2-8b9057bbe0ec.png">
+<img width="653" alt="스크린샷 2022-08-12 오후 12 55 46" src="https://user-images.githubusercontent.com/76617139/184282348-5e6b5880-e0c1-4d80-bdc7-3b2ad88ada5d.png">
+
 
 <img width="440" alt="스크린샷 2022-08-12 오후 12 50 56" src="https://user-images.githubusercontent.com/76617139/184281860-535bb486-e56e-4433-b859-cc1621f101df.png">
 
