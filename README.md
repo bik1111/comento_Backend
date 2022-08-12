@@ -78,6 +78,10 @@ public class settingTest {
 <img width="653" alt="스크린샷 2022-08-12 오후 12 55 46" src="https://user-images.githubusercontent.com/76617139/184282348-5e6b5880-e0c1-4d80-bdc7-3b2ad88ada5d.png">
 
 
+2. 데이터베이스와 테이블 생성 (workbech 오류로 인한 Sequel Ace 로 테이블 구현)
+
+<img width="1305" alt="스크린샷 2022-08-12 오후 1 00 35" src="https://user-images.githubusercontent.com/76617139/184282822-c69f7cf5-b6cb-4a97-88c3-95b0e3edec43.png">
+
 <img width="440" alt="스크린샷 2022-08-12 오후 12 50 56" src="https://user-images.githubusercontent.com/76617139/184281860-535bb486-e56e-4433-b859-cc1621f101df.png">
 
 
