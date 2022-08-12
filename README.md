@@ -9,6 +9,8 @@
 1. 스프링부트 환경설정을 진행하면서 test 코드에 대한 결과는 얻지못함.
 
 ```
+<test.jsp>
+
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%> 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%> 
 <!DOCTYPE html> 
@@ -26,7 +28,51 @@
   </body> 
 </html>
 ```
+```
+<settingTest>
 
+package com.devfun.settingweb_boot.controller;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.devfun.settingweb_boot.service.StatisticService;
+
+@Controller
+public class settingTest {
+	@Autowired
+    private StatisticService service;
+
+    @ResponseBody
+    @RequestMapping("/sqlyearStatistic")
+    public Map<String, Object> sqltest(String year) throws Exception{
+
+        return service.yearloginNum(year);
+    }
+
+    @RequestMapping("/test")
+    public ModelAndView test() throws Exception{
+        ModelAndView mav = new ModelAndView("test");
+        mav.addObject("name", "devfunpj");
+        List<String> resultList = new ArrayList<String>();
+        resultList.add("!!!HELLO WORLD!!!");
+        resultList.add("설정 TEST!!!");
+        resultList.add("설정 TEST!!!");
+        resultList.add("설정 TEST!!!!!");
+        resultList.add("설정 TEST!!!!!!");
+        mav.addObject("list", resultList);
+        return mav;
+    }
+
+}
+```
 
 <img width="1404" alt="스크린샷 2022-08-12 오후 12 55 36" src="https://user-images.githubusercontent.com/76617139/184282326-31dea2e7-0903-409c-9ad2-8b9057bbe0ec.png">
 <img width="653" alt="스크린샷 2022-08-12 오후 12 55 46" src="https://user-images.githubusercontent.com/76617139/184282348-5e6b5880-e0c1-4d80-bdc7-3b2ad88ada5d.png">
