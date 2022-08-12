@@ -85,6 +85,37 @@ public class settingTest {
 <img width="440" alt="스크린샷 2022-08-12 오후 12 50 56" src="https://user-images.githubusercontent.com/76617139/184281860-535bb486-e56e-4433-b859-cc1621f101df.png">
 
 
+3. 통계 API 구축 SQL 작성 (추가적인 학습 필요)
+```
+1. 월별 접속자 수
+SELECT COUNT(userID)
+FROM requestInfo
+//데이터 중 일부만 보고 싶을 떄 사용 (WHERE)
+WHER createDate = BETWEEN '2008010000' AND '20080311259')
+
+ 2. 일자별 접속자 수
+SECLET COUNT(userID)
+FROM requestIfo
+WHERE createDate = BETWEEN '20080100' AND '2008011259'
+
+
+3. 평균 하루 로그인 수 (월간)
+ex) 200801
+SELECT COUNT(userID) 
+FROM reuestInfo
+WHERE createDate = 200801
+
+4. 휴일은 포함한 로그인 수 (월간)
+///
+
+
+5. 부서별 로그인 수 (월별)
+ex) 광고부
+SELECT department
+FROM requestInfo
+```
+
+
 
 -----
 
