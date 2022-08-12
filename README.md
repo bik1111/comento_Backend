@@ -4,9 +4,9 @@
 - 2주차 API 과제 수정완료. (https://spiral-sturgeon-2b1.notion.site/API-be6893ac2dfc4ec29677032c1e24f7a3)
 - 3주차 spring boot 환경설정 (Maven 기반의 Spring Boot)
 
-<h3>결과</h3>
+<h2>결과</h2>
 
-1. 스프링부트 환경설정을 진행하면서 test 코드에 대한 결과는 얻지못함.
+<h3> 1. 스프링부트 환경설정을 진행하면서 test 코드에 대한 결과는 얻지못함. </h3>
 
 ```
 <test.jsp>
@@ -78,7 +78,7 @@ public class settingTest {
 <img width="653" alt="스크린샷 2022-08-12 오후 12 55 46" src="https://user-images.githubusercontent.com/76617139/184282348-5e6b5880-e0c1-4d80-bdc7-3b2ad88ada5d.png">
 
 
-2. 데이터베이스와 테이블 생성 (workbech 오류로 인한 Sequel Ace 로 테이블 구현)
+<h3> 2. 데이터베이스와 테이블 생성 (workbech 오류로 인한 Sequel Ace 로 테이블 구현) </h3>
 
 <img width="1305" alt="스크린샷 2022-08-12 오후 1 00 35" src="https://user-images.githubusercontent.com/76617139/184282822-c69f7cf5-b6cb-4a97-88c3-95b0e3edec43.png">
 
