@@ -1,5 +1,14 @@
 ## comento_Backend
 
+# 4주차
+- API 명세서 (https://app.swaggerhub.com/apis/BIK1111_1/SW_Utilization_Status_API/1.0.0)
+
+
+
+
+
+---
+
 # 3주차
 - 2주차 API 과제 수정완료. (https://spiral-sturgeon-2b1.notion.site/API-be6893ac2dfc4ec29677032c1e24f7a3)
 - 스프링 부트 환경설정 수정 완료. (https://spiral-sturgeon-2b1.notion.site/Spring-Boot-fa3dab0038424ed2bed356cc8aa0775a)
