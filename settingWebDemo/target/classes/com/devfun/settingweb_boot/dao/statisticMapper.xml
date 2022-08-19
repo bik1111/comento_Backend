@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    
+<mapper namespace="com.devfun.settingweb_boot.dao.StatisticMapper">
+ 
+    <select id= "selectYearLogin" parameterType="string" resultType="hashMap">
+        select count(*) as totCnt
+        from statistc.requestinfo ri
+        where left(ri.createDate, 2) = #{year};
+    </select>
+    
+    <select id= "selectMonthLogin" parameterType="string" resultType="hashMap">
+		select count(userID)
+		from requestInfo
+		where createDate BETWEEN 2001010000 AND 2002012359; 
+    </select>
+    
+	 <select id= "selectDateLogin" parameterType="string" resultType="hashMap">
+		select COUNT(userID)
+		from requestInfo
+		where createDate BETWEEN 2006150000 AND 2006152359; 
+    </select>
+   	<select id="selectavgDateLogin" parameterType='string' resultType="hashMap">
+  		select  ROUND(count(*)/ DAY(LAST_DAY(STR_TO_DATE(createDate, '%y%m%d%h%i')))) as avgRequest,  count(*) as totCnt
+		from statistc.requestinfo ri
+		where left(ri.createDate, 4) = #{yearMonth};	
+	</select>
+	
+	<select id="selectdptLogin" parameterType='string' resultType="hashMap">
+	 	select requestID as Department
+        from statistc.requestinfo ri
+        where requestID = #{department};
+	</select>
+	
+    
+</mapper>
