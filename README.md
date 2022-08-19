@@ -1,7 +1,7 @@
 ## comento_Backend
 
 # 4주차
-- API 명세서 (https://app.swaggerhub.com/apis/BIK1111_1/SW_Utilization_Status_API/1.0.0)
+- API 명세서 (https://app.swaggerhub.com/apis/BIK1111_1/SW_Utilization_Status_API/1.0.0). - 주소값 localhost:8031//sqlyearStatisitc?{year} 에 해당하는 데이터를 대표로 작성.
 - API 개발을 위한 SQL 작성
 ```
 1. 월별 접속자 수
