@@ -7,9 +7,9 @@
 - API 수정 가이드
 https://spiral-sturgeon-2b1.notion.site/SW-API-be6893ac2dfc4ec29677032c1e24f7a3
 
-```
 
 ## 결과
+
 <SQL 작성문>
 
 <img width="960" alt="스크린샷 2022-08-20 오전 1 56 46" src="https://user-images.githubusercontent.com/76617139/185669601-0fbccbe4-2bbc-47eb-8207-c2904e06c724.png">
