@@ -39,20 +39,23 @@ ORDERBY requestID
 
 1. 년 별 접속자 수
 
-<img width="476" alt="스크린샷 2022-08-19 오후 11 00 33" src="https://user-images.githubusercontent.com/76617139/185635861-c3b91a54-0032-4cd3-802c-945dbd20ec92.png">
+<img width="492" alt="스크린샷 2022-08-19 오후 11 13 12" src="https://user-images.githubusercontent.com/76617139/185637867-059752b6-dee9-4a69-8ec7-f4c4c5b431a0.png">
 
 2. 월 별 접속자 수 
 
-<img width="629" alt="스크린샷 2022-08-19 오후 4 58 42" src="https://user-images.githubusercontent.com/76617139/185635937-7acd7841-a037-4763-8b20-13d85f04820d.png">
+<img width="530" alt="스크린샷 2022-08-19 오후 11 12 57" src="https://user-images.githubusercontent.com/76617139/185637812-f1bf2347-9633-446e-9206-8cbea4754017.png">
+
 
 3. 일 별 접속자 수 
 
-<img width="465" alt="스크린샷 2022-08-19 오후 11 04 07" src="https://user-images.githubusercontent.com/76617139/185636099-42482db7-2d71-4be3-a9fd-884d79328c76.png">
+<img width="444" alt="스크린샷 2022-08-19 오후 11 10 25" src="https://user-images.githubusercontent.com/76617139/185637290-bfaad298-0103-4ab6-993f-27f40938976a.png">
+
 
 
 4. 일 별 평균 접속자 수
 
-<img width="696" alt="스크린샷 2022-08-19 오후 3 51 44" src="https://user-images.githubusercontent.com/76617139/185636000-38fcfe6f-211b-43bf-8790-dd77579ae17b.png">
+<img width="588" alt="스크린샷 2022-08-19 오후 11 10 07" src="https://user-images.githubusercontent.com/76617139/185637227-c79f4f83-d985-43b1-b9cc-474ee41098e4.png">
+
 
 
 
