@@ -2,8 +2,54 @@
 
 # 4주차
 - API 명세서 (https://app.swaggerhub.com/apis/BIK1111_1/SW_Utilization_Status_API/1.0.0)
+- API 개발을 위한 SQL 작성
+```
+1. 월별 접속자 수
+select count(userID)
+from requestInfo
+where createDate BETWEEN 2001010000 AND 2002012359;
+
+2. 일자별 접속자 수
+select count(userID)
+from requestInfo
+where createDate BETWEEN 2006150000 AND 2006152359;
+
+3. 평균 하루 로그인 수 
+select ROUND(count(*)/ DAY(LAST_DAY(STR_TO_DATE(createDate, '%y%m%d%h%i')))) as avgRequest,  count(*) as totCnt
+from statistc.requestinfo ri
+where left(ri.createDate, 4) = #{yearMonth};
 
 
+4. 휴일을 포함한 로그인 수
+
+//  https://green-joo.tistory.com/8?category=1056095 추후 참고..
+
+5. 부서별 로그인 수
+SELECT requestID
+SUM(COUNT(*)) OVER(ORDER BY createDate) //누적접속건수
+FROM requestInfo
+GROUB BY requestID
+ORDERBY requestID
+```
+
+- 결과
+
+1. 년 별 접속자 수
+
+<img width="476" alt="스크린샷 2022-08-19 오후 11 00 33" src="https://user-images.githubusercontent.com/76617139/185635861-c3b91a54-0032-4cd3-802c-945dbd20ec92.png">
+
+2. 월 별 접속자 수 
+
+<img width="629" alt="스크린샷 2022-08-19 오후 4 58 42" src="https://user-images.githubusercontent.com/76617139/185635937-7acd7841-a037-4763-8b20-13d85f04820d.png">
+
+3. 일 별 접속자 수 
+
+<img width="465" alt="스크린샷 2022-08-19 오후 11 04 07" src="https://user-images.githubusercontent.com/76617139/185636099-42482db7-2d71-4be3-a9fd-884d79328c76.png">
+
+
+4. 일 별 평균 접속자 수
+
+<img width="696" alt="스크린샷 2022-08-19 오후 3 51 44" src="https://user-images.githubusercontent.com/76617139/185636000-38fcfe6f-211b-43bf-8790-dd77579ae17b.png">
 
 
 
