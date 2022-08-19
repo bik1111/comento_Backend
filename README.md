@@ -14,7 +14,7 @@ https://spiral-sturgeon-2b1.notion.site/SW-API-be6893ac2dfc4ec29677032c1e24f7a3
 
 <img width="960" alt="스크린샷 2022-08-20 오전 1 56 46" src="https://user-images.githubusercontent.com/76617139/185669601-0fbccbe4-2bbc-47eb-8207-c2904e06c724.png">
 
-<settingTest.java>
+### <settingTest.java>
 
 <img width="813" alt="스크린샷 2022-08-20 오전 1 58 16" src="https://user-images.githubusercontent.com/76617139/185669812-399a7c4c-9d10-4d57-b522-f56cbb0011d3.png">
 
@@ -97,26 +97,26 @@ https://spiral-sturgeon-2b1.notion.site/SW-API-be6893ac2dfc4ec29677032c1e24f7a3
     
 ```
 
-1. 년 별 접속자 수
+## 1. 년 별 접속자 수
 
 <img width="492" alt="스크린샷 2022-08-19 오후 11 13 12" src="https://user-images.githubusercontent.com/76617139/185637867-059752b6-dee9-4a69-8ec7-f4c4c5b431a0.png">
 
-2. 월 별 접속자 수 
+## 2. 월 별 접속자 수 
 
 <img width="530" alt="스크린샷 2022-08-19 오후 11 12 57" src="https://user-images.githubusercontent.com/76617139/185637812-f1bf2347-9633-446e-9206-8cbea4754017.png">
 
 
-3. 일 별 접속자 수 
+## 3. 일 별 접속자 수 
 
 <img width="444" alt="스크린샷 2022-08-19 오후 11 10 25" src="https://user-images.githubusercontent.com/76617139/185637290-bfaad298-0103-4ab6-993f-27f40938976a.png">
 
 
 
-4. 일 별 평균 접속자 수
+## 4. 일 별 평균 접속자 수
 
 <img width="588" alt="스크린샷 2022-08-19 오후 11 10 07" src="https://user-images.githubusercontent.com/76617139/185637227-c79f4f83-d985-43b1-b9cc-474ee41098e4.png">
 
-5. 부서별 접속자 수
+## 5. 부서별 접속자 수
 
 <img width="458" alt="스크린샷 2022-08-20 오전 2 14 04" src="https://user-images.githubusercontent.com/76617139/185672238-16457b55-e07c-464a-a37e-f6ceab2c0e4f.png">
 
