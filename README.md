@@ -4,38 +4,98 @@
 - API 명세서 (https://app.swaggerhub.com/apis/BIK1111_1/SW_Utilization_Status_API/1.0.0) <br>
 주소값 localhost:8031//sqlyearStatisitc?{year} 에 해당하는 데이터를 대표로 작성.
 
+- API 수정 가이드
+https://spiral-sturgeon-2b1.notion.site/SW-API-be6893ac2dfc4ec29677032c1e24f7a3
 
-- API 개발을 위한 SQL 작성
-```
-1. 월별 접속자 수
-select count(userID)
-from requestInfo
-where createDate BETWEEN 2001010000 AND 2002012359;
-
-2. 일자별 접속자 수
-select count(userID)
-from requestInfo
-where createDate BETWEEN 2006150000 AND 2006152359;
-
-3. 평균 하루 로그인 수 
-select ROUND(count(*)/ DAY(LAST_DAY(STR_TO_DATE(createDate, '%y%m%d%h%i')))) as avgRequest,  count(*) as totCnt
-from statistc.requestinfo ri
-where left(ri.createDate, 4) = #{yearMonth};
-
-
-4. 휴일을 포함한 로그인 수
-
-//  https://green-joo.tistory.com/8?category=1056095 추후 참고..
-
-5. 부서별 로그인 수
-SELECT requestID
-SUM(COUNT(*)) OVER(ORDER BY createDate) //누적접속건수
-FROM requestInfo
-GROUB BY requestID
-ORDERBY requestID
 ```
 
-- 결과
+## 결과
+<SQL 작성문>
+
+<img width="960" alt="스크린샷 2022-08-20 오전 1 56 46" src="https://user-images.githubusercontent.com/76617139/185669601-0fbccbe4-2bbc-47eb-8207-c2904e06c724.png">
+
+<settingTest.java>
+
+<img width="813" alt="스크린샷 2022-08-20 오전 1 58 16" src="https://user-images.githubusercontent.com/76617139/185669812-399a7c4c-9d10-4d57-b522-f56cbb0011d3.png">
+
+```
+<StatisticServiceImpl.java>
+ @Override
+    public HashMap<String, Object> monthloginNum (String month) {
+        // TODO Auto-generated method stub
+        HashMap<String, Object> retVal = new HashMap<String,Object>();
+        
+        try {
+        	retVal = uMapper.selectMonthLogin(month);
+            retVal.put("month", month);
+            retVal.put("is_success", true);
+            
+        }catch(Exception e) {
+            retVal.put("totCnt", -999);
+            retVal.put("month", month);
+            retVal.put("is_success", false);
+        }
+        
+        return retVal;
+    }
+    
+    @Override
+    public HashMap<String, Object> dateloginNum (String date) {
+        // TODO Auto-generated method stub
+        HashMap<String, Object> retVal = new HashMap<String,Object>();
+        
+        try {
+        	retVal = uMapper.selectDateLogin(date);
+            retVal.put("date", date);
+            retVal.put("is_success", true);
+            
+        }catch(Exception e) {
+            retVal.put("totCnt", -999);
+            retVal.put("date", date);
+            retVal.put("is_success", false);
+        }
+        
+        return retVal;
+    }
+    
+    @Override
+    public HashMap<String, Object> avgDatelogin(String yearMonth) {
+        // TODO Auto-generated method stub
+        HashMap<String, Object> retVal = new HashMap<String,Object>();
+        
+        try {
+        	retVal = uMapper.selectavgDateLogin(yearMonth);
+            retVal.put("yearMonth", yearMonth);
+            retVal.put("is_success", true);
+            
+        }catch(Exception e) {
+            retVal.put("totCnt", -999);
+            retVal.put("yearMonth", yearMonth);
+            retVal.put("is_success", false);
+        }
+        
+        return retVal;
+    }
+    @Override
+    public HashMap<String, Object> dptloginNum(String month) {
+        // TODO Auto-generated method stub
+        HashMap<String, Object> retVal = new HashMap<String,Object>();
+        
+        try {
+        	retVal = uMapper.selectdptLogin(month);
+            retVal.put("month", month);
+            retVal.put("is_success", true);
+            
+        }catch(Exception e) {
+            retVal.put("totCnt", -999);
+            retVal.put("month", month);
+            retVal.put("is_success", false);
+        }
+        
+        return retVal;
+    }
+    
+```
 
 1. 년 별 접속자 수
 
@@ -56,6 +116,9 @@ ORDERBY requestID
 
 <img width="588" alt="스크린샷 2022-08-19 오후 11 10 07" src="https://user-images.githubusercontent.com/76617139/185637227-c79f4f83-d985-43b1-b9cc-474ee41098e4.png">
 
+5. 부서별 접속자 수
+
+<img width="458" alt="스크린샷 2022-08-20 오전 2 14 04" src="https://user-images.githubusercontent.com/76617139/185672238-16457b55-e07c-464a-a37e-f6ceab2c0e4f.png">
 
 
 
